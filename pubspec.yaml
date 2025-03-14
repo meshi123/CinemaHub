@@ -1,0 +1,96 @@
+name: cinema_hub
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_bloc: ^9.0.0
+
+  uni_links: ^0.5.1
+
+  # Bloc
+  bloc: ^9.0.0
+  bloc_concurrency: ^0.3.0
+  equatable: ^2.0.7
+
+  stream_transform: ^2.1.1
+
+  # UI
+  flutter_slidable: ^4.0.0
+  percent_indicator: ^4.2.4
+  flutter_sliding_up_panel: ^2.1.1
+  calendar_date_picker2: ^1.1.9
+
+  #ObjectBox
+  objectbox: ^4.1.0
+  objectbox_flutter_libs: ^4.1.0
+  json_annotation: ^4.9.0
+
+  # Firebase
+  firebase_core: ^3.12.1
+  firebase_auth: ^5.5.1
+  firebase_app_check: ^0.3.2+4
+
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.10.0
+  permission_handler: ^11.4.0
+  app_settings: ^5.2.0
+
+
+  image_picker: ^1.1.2  
+  image_cropper: ^9.0.0
+
+  uuid: ^4.5.1
+  provider: ^6.1.2
+
+  lottie: ^3.3.1
+  flutter_animate: ^4.5.2
+  shimmer: ^3.0.0
+  in_app_review: ^2.0.10
+
+  # Project Utilities
+  change_app_package_name: ^1.5.0
+
+  # App Icon
+  flutter_launcher_icons: ^0.14.3
+  intl: ^0.20.2
+
+ # ////////////////////////
+  # * Dev Dependencies
+ # ////////////////////////
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.15
+  objectbox_generator: ^4.1.0
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/jsons/
+    - assets/images/
+    - assets/animations/
+
+flutter_launcher_icons:
+    android: true
+    ios: true
+    remove_alpha_ios: true
+    image_path: "assets/images/app_icon.png" 
+    adaptive_icon_foreground: "assets/images/play_store_512.png" # for android
+    adaptive_icon_background: "#ffffff" # for android
+
+  # ? Run the command below to update ios & android icons
+  # * flutter pub run flutter_launcher_icons:main
+  # ! Important: Make sure to also change android's notification icon at: android/app/src/main/res/drawable
